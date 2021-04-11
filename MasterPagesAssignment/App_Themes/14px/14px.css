@@ -1,0 +1,211 @@
+﻿/*
+    Import reset.css
+*/
+@import url(../reset.css);
+/*
+    color scheme https://paletton.com/#uid=a3P100kymmCozunuIrwFxieOjcL
+*/
+html {
+    background-color: #DCDCDC;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 62.5%; /*10 pixels based on browser default of 16 pixels*/
+}
+
+body {
+    line-height: 1.4;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 5rem;
+    color: #DCDCDC;
+    text-align: center;
+    clear: both;
+    padding: 0.7rem 1.5rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: #492E00;
+    text-align: center;
+}
+
+    h2 a {
+        font-size: inherit;
+    }
+
+h3 {
+    font-size: 2.0rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+a {
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+/*WebPage layout */
+#webPage {
+    width: 960px;
+    margin: 1.5rem auto;
+}
+/*Banner style*/
+#banner {
+    background-color: #b3802b;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #333333;
+    padding: 1rem 1rem 0 1rem;
+    margin-bottom: 1.5rem;
+}
+
+
+    #banner a#BoiseState {
+        float: left;
+    }
+
+        #banner a#BoiseState img {
+            height: 200px;
+            width: 600px;
+            border-radius: 20px;
+        }
+
+    #banner a#Kaden {
+        float: right;
+    }
+
+        #banner a#Kaden img {
+            height: 200px;
+            border-radius: 20px;
+        }
+
+    #banner nav {
+        background-color: #7B6F67;
+        border-radius: 10px;
+        padding: 0.5rem 0;
+        overflow: hidden;
+    }
+
+        #banner nav ul {
+            text-align: center;
+        }
+
+        #banner nav li {
+            display: inline;
+        }
+
+        #banner nav a {
+            color: #DCDCDC;
+            padding: 1.0rem 2.0rem;
+        }
+
+            #banner nav a:hover {
+                background-color: #1A4C9A;
+            }
+
+#Wrapper {
+    background-color: #ECECEC;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #333333;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+    #Wrapper h2 {
+        padding: 1.0rem 0;
+    }
+
+#SideLinks {
+    width: 15%;
+    float: left;
+}
+
+    #SideLinks ul {
+        text-align: center;
+    }
+
+    #SideLinks li {
+        padding-bottom: 1rem;
+    }
+
+    #SideLinks a {
+        color: #072C66;
+    }
+
+        #SideLinks a:hover {
+            color: #E99B13;
+            text-decoration: underline;
+        }
+
+/* Blog articles */
+#Posts {
+    width: 85%;
+    float: right;
+    background-color: white;
+}
+
+    #Posts a {
+        color: #492E00;
+    }
+
+        #Posts a:hover {
+            color: #E99B13;
+            text-decoration: underline;
+        }
+
+    #Posts p {
+        padding: 0.5rem;
+    }
+
+    #Posts hr {
+        border-color: #EEEEEE;
+        border-style: ridge;
+    }
+
+    #Posts footer {
+        padding: 0.5rem;
+    }
+
+#Footer {
+    background-color: #7B6F67;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #333333;
+    padding: 1.5rem;
+    overflow: hidden;
+}
+
+    #Footer #GIMM {
+        float:right;
+    }
+
+#GIMM a img {
+    height: 200px;
+    width: 600px;
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+
+#Footer #PiKappaPhi {
+    float:left;
+}
+
+#PiKappaPhi a img {
+    height: 200px;
+    width: 200px;
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+#Footer p {
+    clear: both;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+}

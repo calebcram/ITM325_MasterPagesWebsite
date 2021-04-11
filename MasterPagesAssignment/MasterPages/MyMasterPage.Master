@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MyMasterPage.master.cs" Inherits="MasterPagesAssignment.MasterPages.MyMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>My Masterpage Assignment</title>
+    <link href="../Styles/Main.css" rel="stylesheet" />
+    <style type="text/css">
+        #banner nav li.dropdown{
+            display:inline-block;
+        }
+
+        .dropdownContent {
+            display:none;
+            position:absolute;
+            background-color:#f9f9f9;
+            min-width:100px;
+            box-shadow:5px 5px 15px #333333;
+        }
+
+        #banner nav div.dropdownContent .LinkButtonClass{
+            display:block;
+            color:black;
+        }
+
+        #banner nav .dropdownContent .LinkButtonClass:hover{
+            background-color:#e1e1e1;
+        }
+
+        .dropdown:hover .dropdownContent{
+            display:block;
+        }
+
+        .dropdown:hover .dropbtn{
+            background-color: aqua;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="WebPage">
+            <header id="banner">
+                <a id="BoiseState" href="#">
+                    <img src="../Images/boise-state-university_2017-11-21_09-05-45.631.jpg" alt="Boise State University" width="1250" height="300"/>
+                </a>
+                <a id="SUITS" href="#">
+                    <img src="../Images/NASA-SUITS-Logo.png" alt="Portrait" width="150" height="150"/>
+                </a>
+                <a id="Caleb" href="#">
+                    <img src="../Images/CramberryPortrait.png" alt="Portrait" width="150" height="250"/>
+                </a>
+                <h1>Caleb Cram ITM 325 Portfolio</h1>
+                <nav>
+                    <ul>
+                        <li><a href="Home.aspx">Home</a></li>
+                        <li><a href="#">Classes</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Archive</a></li>
+                        <li><a href="SimpleCalc.aspx">Calculator</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropbtn">Font Size</a>
+                            <div class="dropdownContent">
+                                <asp:LinkButton ID="LinkButton14px" runat="server" Text="14px" OnClick="LinkButton14px_Click" CssClass="LinkButtonClass"/>
+                                <asp:LinkButton ID="LinkButton16px" runat="server" Text="16px" OnClick="LinkButton16px_Click" CssClass="LinkButtonClass"/>
+                                <asp:LinkButton ID="LinkButton18px" runat="server" Text="18px" OnClick="LinkButton18px_Click" CssClass="LinkButtonClass"/>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="Wrapper">
+                <aside id="SideLinks">
+                    <h2>Side Links</h2>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                    </ul>
+                </aside>
+                <section id="Posts">
+                    <asp:ContentPlaceHolder ID="Articles" runat="server">
+                    </asp:ContentPlaceHolder>
+                </section>
+            </div>
+            <footer id="Footer">
+                <div id="ARSIS4.0">
+                    <a href="#">
+                        <img src="../Images/nasa-suits-graphic.png" alt="Boise State University" width="900" height="300"/>
+                    </a>
+                </div>
+                <div id="GIMM">
+                    <a href="#">
+                        <img src="../Images/x-Gimm_1300.png" />
+                    </a>
+                </div>
+                <div id="AKL">
+                    <a href="#">
+                        <img src="../Images/AKL%20letters.png" />
+                    </a>
+                </div>
+                <div>
+                    <p>&copy;Copyright 2021 Caleb Cram & Boise State University</p>
+                </div>
+            </footer>
+
+        </div>
+    </form>
+</body>
+</html>
